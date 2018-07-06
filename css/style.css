@@ -1,1 +1,31 @@
+/* .body{
+  font-size: 0;
+} */
+.photo {
+  max-width: 600px;
+  margin:auto;
+}
+.gallery{
+  max-width: 600px;
+  margin:auto;
+  /* Removed the gap between inline-blocks by reducing font-size*/
+  font-size: 0;
+}
+.gallery > .photo{
+  max-width: 600px;
+  display: inline-block;
+  margin: auto;
+}
 
+
+/* ====================
+         Desktop
+   ==================== */
+@media only screen and (min-width: 600px){
+  .gallery > .photo{
+    max-width: 300px;
+  }
+  .quarters > .photo{
+    max-width: 150px;
+  }
+}
